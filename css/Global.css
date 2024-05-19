@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+}
+
+:root {
+  --gray-900: rgb(17 24 39);
+  --gray-800: rgb(31 41 55);
+  --gray-700: rgb(55 65 81);
+  --gray-500: rgb(107 114 128);
+  --gray-600: rgb(75 85 99);
+  --gray-400: rgb(31 41 55);
+  --gray-300: rgb(209 213 219);
+  --gray-100: rgb(243 244 246);
+  --gray-50: rgb(249 250 250);
+  --white: rgb(255 255 255);
+  --black: rgb(0 0 0);
+  --primary: rgb(255 0 122);
+  --primary-dark: rgb(25px 0 12);
+  --yellow-600: rgb(202 138 4);
+  --red-700: rgb(185 28 28);
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer_header {
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.section_header {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.section_small_title {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--gray-700);
+  display: flex;
+  justify-content: center;
+}
+
+.category_name {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.line_through {
+  font-size: 14px;
+  color: var(--gray-400);
+  font-weight: 300;
+  text-decoration-line: line-through !important;
+}
+
+.bdt_selling {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--black);
+}
+
+.a_tags {
+  color: #000 !important;
+}
+
+.product_text {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.footer_account_lists li a {
+  font-weight: 500;
+  color: var(--gray-600);
+  font-size: 15px;
+}
+
+.filter_sector_title {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.filter_category_name_list {
+  font-size: 16px !important;
+  color: var(--gray-800) !important;
+  font-weight: 600 !important;
+}
+
+.filter_category_name_list:hover {
+  color: var(--primary) !important;
+}
+
+.shipping_header {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+}

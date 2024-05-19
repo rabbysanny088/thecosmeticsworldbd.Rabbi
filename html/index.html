@@ -1,0 +1,3558 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap link -->
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Bootstrap icons -->
+
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- swiper cdn -->
+
+    <link rel="stylesheet" href="/css/Global.css" />
+    <link rel="stylesheet" href="/css/sign.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header class="header_top">
+      <nav
+        class="d-flex justify-content-between align-items-center mt-2 container"
+      >
+        <!-- Icon for smaller screens -->
+        <i
+          id="menu_List"
+          class="bi bi-list d-lg-none fs-3"
+          onclick="toggleNav()"
+        ></i>
+        <i class="bi bi-x close_X fs-3" onclick="toggleNav()"></i>
+        <div>
+          <!-- Logo -->
+          <a href="/html/index.html">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid cursor_pointer"
+              alt="logo"
+              style="width: 250px; cursor: pointer"
+            />
+          </a>
+        </div>
+
+        <!-- Search form -->
+        <form class="d-none d-lg-block">
+          <div class="position-relative">
+            <i class="bi bi-search search_icons"></i>
+            <input
+              class="search_input"
+              type="text"
+              placeholder="Search makeup, skin care"
+            />
+            <button type="button" class="position-absolute search_button">
+              Search
+            </button>
+          </div>
+        </form>
+
+        <!-- Heart icon and Sign in button -->
+        <div class="d-flex align-items-center gap-5">
+          <i class="bi bi-heart-fill fs-3 d-lg-block d-xl-block d-xxl-block">
+            <span class="position-absolute top-0 fs-6 fw-bolder">0</span>
+          </i>
+          <a
+            href="/html/sign.html"
+            type="button"
+            class="signin_btn d-none d-lg-block"
+          >
+            Sign in
+          </a>
+        </div>
+      </nav>
+      <!-- desktop drop down menu -->
+      <div class="nav-menu w-100 mt-3 d-none d-lg-block">
+        <div class="container">
+          <ul
+            class="d-flex align-items-center justify-content-around drop_down_menu position-relative"
+          >
+            <li>
+              <a href="/html/brand.html" class="brand">Brand</a>
+            </li>
+            <li>
+              <a href="#" class="skin_care">Skin Care</a>
+              <ul class="megamenu_list container">
+                <div class="mt-3">
+                  <h5 class="fw-bold header" style="cursor: pointer">
+                    Product Types
+                  </h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Moisturizer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Serum </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Cleanser </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Toner </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Essence </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Sunscreen </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Mask </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Soothing Gel </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Trial Kit </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Hair Care </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> cream </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Skin concern</h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Normal </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Oily </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Dry </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Combination </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Sensitive </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Damage </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> All Skin Types </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Product Types</h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Moisturizer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Serum </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Cleanser </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Toner </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Essence </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Sunscreen </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Mask </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Soothing Gel </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Trial Kit </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Hair Care </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> cream </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Ingredients</h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Normal </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Oily </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Dry </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Combination </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Sensitive </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Damage </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> All Skin Types </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/html/category.html" class="make_up">Make Up</a>
+              <ul class="megamenu_list-two mt-2 container">
+                <div class="mt-3">
+                  <h5 class="fw-bold header" style="cursor: pointer">
+                    Face Makeup
+                  </h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Face Primer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Foundation </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Loose Powder </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class="">
+                      Bronze & Contour
+                    </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Blush </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Highlight </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> BB & CC Cream </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Makeup Remover </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Eyes Makeup</h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Eyeliner </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Pencil </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Eyes Concealer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Eyeshadow </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Eyebrow </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Eyelash </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Mascara </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Lips Care</h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Lipstick </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Liquid Lipstick </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Lip Balm </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Gloss </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Nails Care</h5>
+                  <li>
+                    <a href="/html/category.html" class=""> Nail Polish </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Nail Art </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Dry </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Polish Remover </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> False Nails </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div>
+                  <h5 class="fw-bold header">Brushes & Accessories</h5>
+                  <li>
+                    <a href="/html/category.html" class="">
+                      Lip and Eyebrow Brush
+                    </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class="">Eye Brush </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> Brush Sets </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class="">
+                      Sponges & Applicators
+                    </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class="">
+                      Foundation Brush
+                    </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a href="/html/category.html" class="food">Food</a>
+              <ul class="megamenu_list_three mt-2 container">
+                <li>
+                  <a href="/html/category.html" class=""> Noodles </a>
+                  <hr class="mt-1 mb-1" />
+                </li>
+                <li>
+                  <a href="/html/category.html" class=""> Green Tea </a>
+                  <hr class="mt-1 mb-1" />
+                </li>
+
+                <li>
+                  <a href="/html/category.html" class=""> Test </a>
+                  <hr class="mt-1 mb-1" />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/html/category.html" class="eid_sale">Eid Sale</a>
+              <ul class="megamenu_list_foure mt-2 container">
+                <li>
+                  <a href="/html/category.html" class=""> </a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="/html/category.html" class="brand">Brand</a>
+              <ul class="megamenu_list_five mt-2 container">
+                <div class="mt-2">
+                  <li>
+                    <a href="/html/category.html" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="/html/category.html" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="/html/category.html" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="/html/category.html" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="/html/category.html" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="/html/category.html" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="/html/category.html" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a href="/html/category.html" class="join_seller"
+                >Join As Seller</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- desktop drop down menu -->
+
+      <!-- responsive drop down menu -->
+
+      <div
+        class="responsive_drop_down_menu d-block d-lg-none position-relative"
+      >
+        <div id="responsive_drop_down_Box" class="side_nav shadow-sm">
+          <div class="p-4">
+            <div class="border-bottom border-dark border-1">
+              <a href="/html/brand.html" class="brand w-100">Brand</a>
+            </div>
+            <!-- 1` -->
+            <div class="side_links border-bottom border-dark border-1">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care mt-3">Skin care</h5>
+                <i class="bi bi-caret-down-fill side_drop_down_open"></i>
+              </div>
+
+              <div id="product_types" class="hidden">
+                <div class="border-bottom border-dark border-1 mb-2">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="header">Product Types</h5>
+                    <i
+                      class="bi bi-caret-down-fill side_drop_down_open_two"
+                    ></i>
+                  </div>
+                  <div
+                    id="side_megamenu_list"
+                    class="hidden_two side_megamenu_list_links container"
+                  >
+                    <div class="">
+                      <li>
+                        <a href="#" class=""> Moisturizer </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Serum </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+
+                      <li>
+                        <a href="#" class=""> Cleanser </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Toner </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Essence </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Sunscreen </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Mask </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Soothing Gel </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Trial Kit </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Hair Care </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> cream </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- skin types -->
+                <div id="skin_types" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Skin Types</h5>
+                      <i
+                        class="bi bi-caret-down-fill side_drop_down_open_three"
+                      ></i>
+                    </div>
+                    <div
+                      id="side_megamenu_list_skin"
+                      class="hidden_three side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Normal </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Oily </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Dry </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Combination </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Sensitive </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Damage </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> All Skin Types </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skin Concern -->
+
+                <div id="concern_types" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Skin Concern</h5>
+                      <i
+                        class="bi bi-caret-down-fill side_drop_down_open_four"
+                      ></i>
+                    </div>
+                    <div
+                      id="side_megamenu_list_concern"
+                      class="hidden_four side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Normal </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Oily </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Dry </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Combination </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Sensitive </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Damage </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> All Skin Types </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ingredients -->
+                <div id="Ingredients_types" class="">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="header">Ingredients</h5>
+                    <i
+                      class="bi bi-caret-down-fill side_drop_down_open_five"
+                    ></i>
+                  </div>
+                  <div
+                    id="side_megamenu_list_Ingredients"
+                    class="hidden_five side_megamenu_list_links container"
+                  >
+                    <div class="">
+                      <li>
+                        <a href="#" class=""> Normal </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Oily </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Dry </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Combination </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Sensitive </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Damage </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> All Skin Types </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="side_links border-bottom border-dark border-1 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Make Up</h5>
+                <i
+                  class="bi bi-caret-down-fill side_drop_down_open_make_up"
+                ></i>
+              </div>
+
+              <div id="make_up" class="hidden_make_up">
+                <!-- eyes make_up -->
+                <div id="eyes_make_up" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Eyes Makeup</h5>
+                      <i
+                        class="bi bi-caret-down-fill side_eyes_makeup_open_one"
+                      ></i>
+                    </div>
+                    <div
+                      id="side_eyes_makeup_one"
+                      class="eyes_hidden side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Eyeliner </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Pencil </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Eyes Concealer </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Eyeshadow </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Eyelash </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Mascara </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lips Care -->
+
+                <div id="Lips_care" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Lips Care</h5>
+                      <i class="bi bi-caret-down-fill lips_care_open"></i>
+                    </div>
+                    <div
+                      id="side_lips_care"
+                      class="lips_hidden side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Lipstick </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Liquid Lipstick </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Lip Balm </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Gloss </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- nails care -->
+                <div id="Nails_Care" class="">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="header">Nails Care</h5>
+                    <i class="bi bi-caret-down-fill Nails_Care_open"></i>
+                  </div>
+                  <div
+                    id="side_Nails_Care"
+                    class="nails_hidden side_megamenu_list_links container"
+                  >
+                    <div class="">
+                      <li>
+                        <a href="#" class=""> Nail Polish </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Nail Art </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Polish Remover </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> False Nails </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+
+            <div class="side_links border-bottom border-dark border-1 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Food</h5>
+                <i class="bi bi-caret-down-fill side_food_open"></i>
+              </div>
+
+              <div id="food" class="food_hidden">
+                <!-- skin types -->
+                <div class="food_links">
+                  <li>
+                    <a href="#" class=""> Normal </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Oily </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Dry </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+
+            <li class="mt-3">
+              <a href="#" class="normal"> Eid Sale </a>
+              <hr class="mt-1 mb-1" />
+            </li>
+
+            <!-- 5 -->
+
+            <div class="side_links border-bottom border-dark border-1 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Brand</h5>
+                <i class="bi bi-caret-down-fill side_Brand_open"></i>
+              </div>
+
+              <div id="Brand" class="brand_hidden">
+                <!-- skin types -->
+                <div class="food_links">
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- res nav bottom -->
+      <div class="d-lg-none position-relative">
+        <div class="res_nav shadow-lg">
+          <ul class="res_nav_links">
+            <li>
+              <a
+                href="/html/index.html"
+                class="d-flex align-items-center justify-content-center res_lists"
+              >
+                Home <span><i class="bi bi-house-door-fill"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center res_lists"
+                id="res_category"
+                >Category <span><i class="bi bi-ui-checks-grid"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center res_lists"
+                id="cart_fill_items"
+              >
+                Cart
+                <span><i class="bi bi-cart2"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="/html/sign.html"
+                class="d-flex align-items-center justify-content-center res_lists"
+                >Account <span><i class="bi bi-person-fill"></i></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- responsive drop down menu -->
+
+      <form class="d-block d-lg-none mt-2">
+        <div
+          class="position-relative d-flex justify-content-center align-items-center"
+        >
+          <input
+            class="search_input w-75 p-2"
+            type="text"
+            placeholder="Search makeup, skin care"
+          />
+          <i class="bi bi-search search_icons-btn"></i>
+        </div>
+      </form>
+    </header>
+    <div class="d-none d-lg-block">
+      <div class="shop_cart" onclick="toggleCart()">
+        <i class="bi bi-cart-fill"></i>
+        <span>1 items</span>
+      </div>
+    </div>
+
+    <div id="add_cart_items_all" class="add_cart_items shadow-lg">
+      <div
+        class="d-flex align-items-center justify-content-between cart_main_items p-3"
+      >
+        <h3 class="cart_header_title">Shopping cart</h3>
+        <i
+          class="bi bi-x fs-2 cursor_pointer shop_close_x"
+          onclick="toggleCart()"
+        ></i>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-between gap-3 cart_add_items p-2"
+      >
+        <div class="d-flex align-items-center gap-3">
+          <img src="../img/cart-img.jpg" alt="" class="img-fluid cart_img" />
+          <div>
+            <h3 class="cart_name">Eunyul Lab Acne Solu...</h3>
+            <div class="qty">
+              <span class="minus"><i class="bi bi-dash"></i></span>
+              <input type="text" class="qty_input" value="0" />
+              <span class="plus"><i class="bi bi-plus"></i></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="number_of_money">
+          <span>5993</span>
+
+          <span><i class="bi bi-trash3-fill fs-5 cursor_pointer"></i></span>
+        </div>
+      </div>
+      <hr />
+      <div class="mt-3">
+        <div class="subtoal border-top p-3">
+          <div
+            class="d-flex align-items-center justify-content-between sub_total_container"
+          >
+            <div>
+              <h3>Subtotal</h3>
+            </div>
+            <div>
+              <span>5994</span>
+            </div>
+          </div>
+          <p class="sub_total_text">
+            Shipping and taxes calculated at checkout.
+          </p>
+          <div class="mb-2">
+            <a href="/html/checkout.html" class="continue_btn">
+              <button type="button" class="login_btn">Checkout</button>
+            </a>
+          </div>
+          <a href="/html/index.html" class="continue_btn">
+            <span class="or">or</span><span> Continue Shopping →</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- swiper -->
+      <section>
+        <div class="swiper_img_p mt-4 mt-lg-2">
+          <div class="swiper Myswiper_one">
+            <div class="swiper-wrapper swiper_wrapper_margin">
+              <div class="swiper-slide">
+                <img
+                  src="../img/banner.1.png"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="../img/banner-2.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hot deals start -->
+      <section>
+        <span class="section_header mt-4 mb-4">Hot Deals</span>
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="hot_deals">
+                <img
+                  src="../img/buy_one_get_one.webp"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="hot_deals">
+                <img
+                  src="../img/combo.webp"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="hot_deals">
+                <img
+                  src="../img/discount.webp"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+              <div class="hot_deals">
+                <img
+                  src="../img/70.png"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hot deals end -->
+
+      <!-- Product Types start -->
+      <section>
+        <span class="mt-4 section_small_title">Shop By Your</span>
+        <span class="mb-n1 section_header">Product Types</span>
+        <div class="container">
+          <div class="product_types">
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/innisfree.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Moisturizer</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Serum</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/innisfree.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Cleanser</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Toner</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/innisfree.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Essence</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Sunscreen </span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/innisfree.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Mask</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Soothing Gel </span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Trial Kit </span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Hair Care </span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">cream</span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Lip Care </span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Bath & Body </span>
+            </div>
+            <div class="">
+              <a href="/html/category.html">
+                <img
+                  src="../img/deep.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Care</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Product Types end -->
+      <!-- Skin Types start -->
+
+      <section>
+        <span class="mt-4 section_small_title">Shop By Your</span>
+        <span class="mb-n1 section_header">Skin Types</span>
+        <div class="container">
+          <div class="skin_types">
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/normal.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Normal</span>
+            </div>
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/combination.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Oily</span>
+            </div>
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/normal.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Dry</span>
+            </div>
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/combination.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Combination</span>
+            </div>
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/normal.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Sensitive</span>
+            </div>
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/combination.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">Damage</span>
+            </div>
+            <div>
+              <a href="/html/category.html">
+                <img
+                  src="../img/normal.jpg"
+                  class="img-fluid cursor_pointer"
+                  alt=""
+                />
+              </a>
+              <span class="category_name">All Skin Types</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Product Types end -->
+
+      <!-- Skin concern start -->
+      <section class="container">
+        <span class="mt-4 section_small_title">Shop By Your</span>
+        <span class="mb-4 section_header">Skin Concern</span>
+        <div class="swiper Myswiper_two">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/anti.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 1"
+                />
+              </a>
+              <span class="category_name">Acne/Pimples Treatment</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/hair.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 2"
+                />
+              </a>
+              <span class="category_name">Large Pores/ Scars Solution</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/anti.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 3"
+                />
+              </a>
+              <span class="category_name">Brightening Solution</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/plg.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 4"
+                />
+              </a>
+              <span class="category_name">Dark Circles Treatment</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/hair.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 5"
+                />
+              </a>
+              <span class="category_name">Dark Circles Treatment</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/anti.jpg
+              "
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image
+                1"
+                />
+              </a>
+              <span class="category_name"> Sun Burn & Damage control </span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/plg.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 6"
+                />
+              </a>
+              <span class="category_name">Dark Circles Treatment</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/anti.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 7"
+                />
+              </a>
+              <span class="category_name"> Sun Burn & Damage control </span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/hair.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 8"
+                />
+              </a>
+              <span class="category_name">Dark Circles Treatment</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/plg.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 9"
+                />
+              </a>
+              <span class="category_name"> Sun Burn & Damage control </span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/hair.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 10"
+                />
+              </a>
+              <span class="category_name"> Anti-Dandruf Care </span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/anti.jpg"
+                  class="img-fluid cursor_pointer img-res"
+                  alt="Image 11"
+                />
+              </a>
+              <span class="category_name"> Stretch Care </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skin concern end -->
+
+      <!-- shop by origin start -->
+      <section class="container">
+        <span class="mt-4 section_small_title">Shop By Your</span>
+        <span class="mb-4 section_header">Skin Concern</span>
+        <div class="swiper Myswiper_three">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/korea.jpg"
+                  class="img-fluid cursor_pointer img-res_two"
+                  alt="Image 1"
+                />
+              </a>
+              <span class="category_name">Korea</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/united kingdom.png"
+                  class="img-fluid cursor_pointer img-res_two"
+                  alt="Image 2"
+                />
+              </a>
+              <span class="category_name">United Kingdom</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/usa.png"
+                  class="img-fluid cursor_pointer img-res_two"
+                  alt="Image 3"
+                />
+              </a>
+              <span class="category_name"> USA </span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/france.png"
+                  class="img-fluid cursor_pointer img-res_two"
+                  alt="Image 4"
+                />
+              </a>
+              <span class="category_name">France</span>
+            </div>
+            <div class="swiper-slide">
+              <a href="/html/category.html">
+                <img
+                  src="../img/japen.jpg"
+                  class="img-fluid cursor_pointer img-res_two"
+                  alt="Image 4"
+                />
+              </a>
+              <span class="category_name"> Japan </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- shop by origin end -->
+
+      <!-- Best Selling start -->
+      <section class="container">
+        <span class="mt-4 section_small_title">People Like This</span>
+        <span class="mb-4 section_header">Best Selling</span>
+        <div class="best_selling position-relative">
+          <a href="/html/category.html">
+            <img
+              src="../img/advanced.jpg"
+              class="img-fluid cursor_pointer"
+              alt=""
+            />
+          </a>
+          <button type="button" class="add_to_cart">Add to Cart</button>
+          <p class="discount_level">-17%</p>
+          <div class="best_selling_heart cursor_pointer">
+            <i class="bi bi-heart-fill bold_heart"> </i>
+          </div>
+          <div class="product_details position-absolute mt-3 cursor_pointer">
+            <a href="#" class="a_tags">
+              <h4 class="product_text">
+                Cosrx Advanced Snail 92 All In One <br />
+                Cream 100g
+              </h4>
+            </a>
+            <div class="d-flex gap-3">
+              <p class="bdt_selling">1740 BDT</p>
+              <p class="line_through">2100 BDT</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Best Selling end -->
+
+      <!-- DAily Offer Products start -->
+      <section class="container">
+        <span class="mt-4 section_small_title">People Like This </span>
+        <span class="mb-4 section_header">Daily Offer Products </span>
+        <div class="home_product_card_container">
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/suncel.jpg"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-17%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  ISNTREE HYALURONIC ACID WATERY SUN GEL 50ML
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">1500 BDT</p>
+                <p class="line_through">1700 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/cera.webp"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-25%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Cosrx AHA BHA Clarifying Treatment Toner – 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">750 BDT</p>
+                <p class="line_through">1000 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/suncel.jpg"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-17%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Missha All Around Safe Block Cotton Sun SPF50++ 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">850 BDT</p>
+                <p class="line_through">1100 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/cera.webp"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-25%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Cosrx AHA BHA Clarifying Treatment Toner – 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">750 BDT</p>
+                <p class="line_through">1000 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/suncel.jpg"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-17%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Missha All Around Safe Block Cotton Sun SPF50++ 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">850 BDT</p>
+                <p class="line_through">1100 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/cera.webp"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-25%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Cosrx AHA BHA Clarifying Treatment Toner – 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">750 BDT</p>
+                <p class="line_through">1000 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/suncel.jpg"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-17%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Missha All Around Safe Block Cotton Sun SPF50++ 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">850 BDT</p>
+                <p class="line_through">1100 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/cera.webp"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-25%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Cosrx AHA BHA Clarifying Treatment Toner – 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">750 BDT</p>
+                <p class="line_through">1000 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/suncel.jpg"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-17%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Missha All Around Safe Block Cotton Sun SPF50++ 50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">850 BDT</p>
+                <p class="line_through">1100 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="daily_offer_product position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/cera.webp"
+                class="img-fluid cursor_pointer"
+                alt=""
+              />
+            </a>
+            <button type="button" class="daily_add_to_cart">Add to Cart</button>
+            <p class="discount_level">-25%</p>
+            <div class="daily_product_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h3 class="product_text">
+                  Cosrx AHA BHA Clarifying Treatment Toner – 50ml
+                </h3>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">750 BDT</p>
+                <p class="line_through">1000 BDT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- DAily Offer Products start end -->
+
+      <!-- Combo Products start -->
+      <section class="container">
+        <span class="mt-4 section_small_title">People Like This</span>
+        <span class="mb-4 section_header">Combo Products</span>
+        <div class="home_product_card_container">
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">Melasma Removal Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">5500 BDT</p>
+                <p class="line_through">6500 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">Acne Removal Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">6300 BDT</p>
+                <p class="line_through">7000 BDT</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">whitening Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">4900 BDT</p>
+                <p class="line_through">5500 BDT</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">Til Removal Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">2999 BDT</p>
+                <p class="line_through">3500 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">whitening Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">4900 BDT</p>
+                <p class="line_through">5500 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">Acne Removal Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">6300 BDT</p>
+                <p class="line_through">7000 BDT</p>
+              </div>
+            </div>
+          </div>
+          <div class="combo_products position-relative">
+            <a href="/html/category.html">
+              <img
+                src="../img/flower_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="combo_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="combo_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">Melasma Removal Combo</h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">5500 BDT</p>
+                <p class="line_through">6500 BDT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Combo Products end -->
+
+      <!-- Featured Products start -->
+
+      <section class="container">
+        <span class="mt-4 section_small_title">People Like This</span>
+        <span class="mb-4 section_header">Featured Products</span>
+        <div class="home_product_card_container">
+          <!-- 1 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  The YEON vita7 c-nergy vitamin cream – 100ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">1650 BDT</p>
+                <p class="line_through">1900 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-16%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Anua Heartleaf 77% Soothing Toner 40ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 3-->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Skin1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum
+                  50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Dear Klairs Freshly Juiced Vitamin C Drop – 35ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_four.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Nivea Sun Protect Super Water Gel Sunscreen Pump Bottle SPF50
+                  PA+++ 140g (Japan)
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_five.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel gold 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_sixjpg.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_seven.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Cerave hydrating facial cleanser 355ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  The YEON vita7 c-nergy vitamin cream – 100ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">1650 BDT</p>
+                <p class="line_through">1900 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-16%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Anua Heartleaf 77% Soothing Toner 40ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 11-->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Skin1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum
+                  50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 12 -->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Dear Klairs Freshly Juiced Vitamin C Drop – 35ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 13 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_four.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Nivea Sun Protect Super Water Gel Sunscreen Pump Bottle SPF50
+                  PA+++ 140g (Japan)
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 14 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_five.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel gold 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 15 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_sixjpg.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 16 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Dear Klairs Freshly Juiced Vitamin C Drop – 35ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 17 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_four.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Nivea Sun Protect Super Water Gel Sunscreen Pump Bottle SPF50
+                  PA+++ 140g (Japan)
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 18 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_five.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel gold 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 19 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  The YEON vita7 c-nergy vitamin cream – 100ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">1650 BDT</p>
+                <p class="line_through">1900 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 20 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-16%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Anua Heartleaf 77% Soothing Toner 40ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 21-->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Skin1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum
+                  50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 22 -->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Dear Klairs Freshly Juiced Vitamin C Drop – 35ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 23 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_four.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Nivea Sun Protect Super Water Gel Sunscreen Pump Bottle SPF50
+                  PA+++ 140g (Japan)
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 24 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_five.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel gold 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 25 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_sixjpg.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  skin aqua uv super moisture gel 110g
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 26 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_seven.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Cerave hydrating facial cleanser 355ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 27 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_one.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-17%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  The YEON vita7 c-nergy vitamin cream – 100ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">1650 BDT</p>
+                <p class="line_through">1900 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 28 -->
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-16%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="/html/product.html" class="a_tags">
+                <h4 class="product_text">
+                  Anua Heartleaf 77% Soothing Toner 40ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 29
+            -->
+
+          <div class="featured_products position-relative">
+            <a href="/html/product.html">
+              <img
+                src="../img/feature_img_two.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Skin1004 Madagascar Centella Hyalu-Cica Water-Fit Sun Serum
+                  50ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+          <!-- 30 -->
+
+          <div class="featured_products position-relative">
+            <a href="#">
+              <img
+                src="../img/feature_img_three.jpg"
+                class="img-fluid cursor_pointer w-100 h-100"
+                alt=""
+              />
+            </a>
+            <button type="button" class="featured_products_add_to_cart">
+              Add to Cart
+            </button>
+            <p class="discount_level">-11%</p>
+            <div class="featured_products_heart cursor_pointer">
+              <i class="bi bi-heart-fill bold_heart"> </i>
+            </div>
+            <div class="product_details position-absolute mt-3 cursor_pointer">
+              <a href="#" class="a_tags">
+                <h4 class="product_text">
+                  Dear Klairs Freshly Juiced Vitamin C Drop – 35ml
+                </h4>
+              </a>
+              <div class="d-flex gap-3">
+                <p class="bdt_selling">800 BDT</p>
+                <p class="line_through">950 BDT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Combo Products end -->
+    </main>
+
+    <!-- Footer start -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid cursor_pointer"
+              alt="logo"
+            />
+            <p class="footer_text">
+              Shofy is a powerful tool eCommerce Laravel script for creating a
+              professional and visually appealing online store.
+            </p>
+            <div class="d-flex align-items-center gap-2 social_Icons">
+              <div>
+                <a class="facebook" href="https://www.facebook.com/">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="xtv">
+                <a href="https://www.google.com">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="youtube">
+                <a href="https://www.youtube.com">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+                    ></path>
+                    <path d="M10 9l5 3l-5 3z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="linkedin">
+                <a href="https://www.linkedin.com">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <ul class="footer_account_lists position-relative">
+              <h3 class="footer_header mb-2">My Account</h3>
+              <li>
+                <a href="#"> Track Orders </a>
+              </li>
+              <li>
+                <a href="#"> Shipping </a>
+              </li>
+              <li>
+                <a href="#"> Wishlist </a>
+              </li>
+              <li>
+                <a href="#"> My Account </a>
+              </li>
+              <li>
+                <a href="#"> Order History </a>
+              </li>
+              <li>
+                <a href="#"> Returns </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <ul class="footer_account_lists position-relative">
+              <h3 class="footer_header mb-2">Information</h3>
+              <li>
+                <a href="#"> Our Story </a>
+              </li>
+              <li>
+                <a href="#"> Careers </a>
+              </li>
+              <li>
+                <a href="#"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="#"> Latest News </a>
+              </li>
+              <li>
+                <a href="#"> Contact us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <h3 class="footer_header mb-2">Talk To Us</h3>
+            <span>Got Questions? Call us </span>
+            <p>+670 413 90 762</p>
+            <div class="d-flex align-items-center gap-2">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 5C1 2.2 2.6 1 5 1H13C15.4 1 17 2.2 17 5V10.6C17 13.4 15.4 14.6 13 14.6H5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13 5.40039L10.496 7.40039C9.672 8.05639 8.32 8.05639 7.496 7.40039L5 5.40039"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M1 11.4004H5.8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M1 8.19922H3.4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <span class="cursor_pointer footer_information"
+                >support@shofy.com</span
+              >
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <svg
+                width="17"
+                height="20"
+                viewBox="0 0 17 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.50001 10.9417C9.99877 10.9417 11.2138 9.72668 11.2138 8.22791C11.2138 6.72915 9.99877 5.51416 8.50001 5.51416C7.00124 5.51416 5.78625 6.72915 5.78625 8.22791C5.78625 9.72668 7.00124 10.9417 8.50001 10.9417Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                ></path>
+                <path
+                  d="M1.21115 6.64496C2.92464 -0.887449 14.0841 -0.878751 15.7889 6.65366C16.7891 11.0722 14.0406 14.8123 11.6313 17.126C9.88298 18.8134 7.11704 18.8134 5.36006 17.126C2.95943 14.8123 0.210885 11.0635 1.21115 6.64496Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+              <span class="cursor_pointer footer_information"
+                >79 Sleepy Hollow St. Jamaica, New York 1432</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer_collection mt-4">
+          <div class="healthAndBeauty mt-3">
+            <strong>Health & Beauty:</strong>
+            <a href="#">Dresses</a>
+            <a href="#">Hats</a>
+            <a href="#">Jeans</a>
+            <a href="#">Women's Clothing</a>
+            <a href="#">Suits</a>
+            <a href="#">Pants</a>
+            <a href="#">Accessories</a>
+          </div>
+          <div class="healthAndBeauty mt-3">
+            <strong>Electronics:</strong>
+            <a href="#">Men's Clothing</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Activewear</a>
+            <a href="#">Shoes</a>
+          </div>
+          <div class="healthAndBeauty mt-3">
+            <strong>Sweet Treats:</strong>
+            <a href="#">Hats</a>
+            <a href="#">Running Shoes</a>
+            <a href="#">Scarves</a>
+            <a href="#">Accessories</a>
+            <a href="#">jewelry</a>
+            <a href="#">Shoes</a>
+            <a href="#">Sportswear</a>
+          </div>
+          <div class="healthAndBeauty mt-3">
+            <strong>Fashion:</strong>
+            <a href="#">Discover Skincard</a>
+            <a href="#">Men's Clothing</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Dresses</a>
+            <a href="#">Clothing</a>
+            <a href="#">jeans</a>
+            <a href="#">Women's Clothing</a>
+            <a href="#">Suits</a>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </footer>
+    <div class="sub_footer">
+      <div>
+        <p>thecosmeticsworldbd.com @ all right reserved</p>
+      </div>
+      <div>
+        <p>Developed By MIT</p>
+      </div>
+    </div>
+    <!-- Footer end -->
+
+    <!-- bootstrap -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- swiper cdn -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>

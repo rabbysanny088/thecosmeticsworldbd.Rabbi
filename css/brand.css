@@ -1,0 +1,149 @@
+:root {
+  --gray-900: rgb(17 24 39);
+  --gray-800: rgb(31 41 55);
+  --gray-700: rgb(55 65 81);
+  --gray-500: rgb(107 114 128);
+  --gray-600: rgb(75 85 99);
+  --gray-400: rgb(31 41 55);
+  --gray-300: rgb(209 213 219);
+  --gray-100: rgb(243 244 246);
+  --gray-50: rgb(249 250 250);
+  --white: rgb(255 255 255);
+  --black: rgb(0 0 0);
+  --primary: rgb(255 0 122);
+  --primary-dark: rgb(25px 0 12);
+  --yellow-600: rgb(202 138 4);
+  --red-700: rgb(185 28 28);
+}
+
+.three,
+.a,
+.b,
+.c,
+.d,
+.e,
+.f,
+.g,
+.h,
+.i,
+.j,
+.k,
+.l,
+.p,
+.r,
+.s,
+.t,
+.u,
+.v,
+.m,
+.w,
+.x,
+.z,
+.n,
+.y,
+.o {
+  border: 5px solid black transparent;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a_to_z_toggle {
+  font-weight: 600;
+  border-radius: 50%;
+  background-color: var(--primary);
+  color: #fff !important;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a_to_z_border {
+  padding: 10px;
+  gap: 8px;
+  width: 100%;
+  border: 1px solid #eee;
+  background: white;
+}
+
+.a_to_z_border a {
+  color: black;
+  font-weight: 500;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.all_Brands_header {
+  font-size: 24px;
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 28px;
+  display: inline-block;
+  font-family: Arsenal, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+.all_brands_section {
+  margin-top: 167px;
+}
+
+.all_small_header,
+.all_big_header {
+  color: #222;
+  font-weight: 400;
+  width: 100%;
+  transition: none;
+  cursor: pointer;
+  padding: 15px;
+}
+.all_big_header {
+  padding: 0 !important;
+}
+
+.all_famous li {
+  margin-bottom: 6px !important;
+}
+
+.all_small_header:hover,
+.all_big_header:hover {
+  color: var(--primary);
+  text-decoration: underline !important;
+}
+
+.all_brands_three,
+.all_brands_A {
+  background: #f5f4f7;
+  border-left: 8px solid #f5f4f7;
+  padding: 10px 20px;
+  border-radius: 0 30px 30px 0;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.all_brands_A {
+  /* background: #ffedf2 !important;
+  border-color: #ff1a58 !important; */
+}
+
+@media (max-width: 992px) {
+  .a_to_z_border {
+    flex-wrap: wrap;
+    height: 132px;
+  }
+}
+@media (max-width: 600px) {
+  .all_famous {
+    margin-left: -31px;
+  }
+  .all_brands_A {
+    margin-left: 6px;
+    width: 98%;
+  }
+}

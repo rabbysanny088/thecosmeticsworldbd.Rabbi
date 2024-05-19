@@ -1,0 +1,2863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/brand.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap link -->
+
+    <!-- Bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../css/category.css" />
+    <link rel="stylesheet" href="../css/Global.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Brand</title>
+  </head>
+  <body>
+    <header class="header_top">
+      <nav
+        class="d-flex justify-content-between align-items-center mt-2 container"
+      >
+        <!-- Icon for smaller screens -->
+        <i
+          id="menu_List"
+          class="bi bi-list d-lg-none fs-3"
+          onclick="toggleNav()"
+        ></i>
+        <i class="bi bi-x close_X fs-3" onclick="toggleNav()"></i>
+        <div>
+          <!-- Logo -->
+          <a href="/html/index.html">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid cursor_pointer"
+              alt="logo"
+              style="width: 250px; cursor: pointer"
+            />
+          </a>
+        </div>
+
+        <!-- Search form -->
+        <form class="d-none d-lg-block">
+          <div class="position-relative">
+            <i class="bi bi-search search_icons"></i>
+            <input
+              class="search_input"
+              type="text"
+              placeholder="Search makeup, skin care"
+            />
+            <button type="button" class="position-absolute search_button">
+              Search
+            </button>
+          </div>
+        </form>
+
+        <!-- Heart icon and Sign in button -->
+        <div class="d-flex align-items-center gap-5">
+          <i class="bi bi-heart-fill fs-3 d-lg-block d-xl-block d-xxl-block">
+            <span class="position-absolute top-0 fs-6 fw-bolder">0</span>
+          </i>
+          <a href="/html/sign.html">
+            <button type="button" class="signin_btn d-none d-lg-block">
+              Sign in
+            </button>
+          </a>
+        </div>
+      </nav>
+      <!-- desktop drop down menu -->
+      <div class="nav-menu w-100 mt-3 d-none d-lg-block">
+        <div class="container">
+          <ul
+            class="d-flex align-items-center justify-content-around drop_down_menu position-relative"
+          >
+            <li>
+              <a href="#" class="skin_care">Skin Care</a>
+              <ul class="megamenu_list container">
+                <div class="mt-3">
+                  <h5 class="fw-bold header" style="cursor: pointer">
+                    Product Types
+                  </h5>
+                  <li>
+                    <a href="#" class=""> Moisturizer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Serum </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Cleanser </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Toner </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Essence </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Sunscreen </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Mask </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Soothing Gel </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Trial Kit </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Hair Care </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> cream </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Skin concern</h5>
+                  <li>
+                    <a href="#" class=""> Normal </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Oily </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Dry </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Combination </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Sensitive </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Damage </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> All Skin Types </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Product Types</h5>
+                  <li>
+                    <a href="#" class=""> Moisturizer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Serum </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Cleanser </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Toner </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Essence </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Sunscreen </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Mask </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Soothing Gel </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Trial Kit </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Hair Care </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> cream </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Ingredients</h5>
+                  <li>
+                    <a href="#" class=""> Normal </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Oily </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Dry </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Combination </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Sensitive </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Damage </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> All Skin Types </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="">
+              <a href="#" class="make_up">Make Up</a>
+              <ul class="megamenu_list-two mt-2 container">
+                <div class="mt-3">
+                  <h5 class="fw-bold header" style="cursor: pointer">
+                    Face Makeup
+                  </h5>
+                  <li>
+                    <a href="#" class=""> Face Primer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Foundation </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Loose Powder </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Bronze & Contour </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Blush </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Highlight </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> BB & CC Cream </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Makeup Remover </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Eyes Makeup</h5>
+                  <li>
+                    <a href="#" class=""> Eyeliner </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Pencil </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Eyes Concealer </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Eyeshadow </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Eyebrow </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Eyelash </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Mascara </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Lips Care</h5>
+                  <li>
+                    <a href="#" class=""> Lipstick </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Liquid Lipstick </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Lip Balm </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Gloss </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-3">
+                  <h5 class="fw-bold header">Nails Care</h5>
+                  <li>
+                    <a href="#" class=""> Nail Polish </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Nail Art </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Dry </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Polish Remover </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> False Nails </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div>
+                  <h5 class="fw-bold header">Brushes & Accessories</h5>
+                  <li>
+                    <a href="#" class=""> Lip and Eyebrow Brush </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class="">Eye Brush </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Brush Sets </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Sponges & Applicators </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Foundation Brush </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="food">Food</a>
+              <ul class="megamenu_list_three mt-2 container">
+                <li>
+                  <a href="#" class=""> Noodles </a>
+                  <hr class="mt-1 mb-1" />
+                </li>
+                <li>
+                  <a href="#" class=""> Green Tea </a>
+                  <hr class="mt-1 mb-1" />
+                </li>
+
+                <li>
+                  <a href="#" class=""> Test </a>
+                  <hr class="mt-1 mb-1" />
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="eid_sale">Eid Sale</a>
+              <ul class="megamenu_list_foure mt-2 container">
+                <li>
+                  <a href="#" class=""> </a>
+                </li>
+              </ul>
+            </li>
+            <li class="">
+              <a href="#" class="brand">Brand</a>
+              <ul class="megamenu_list_five mt-2 container">
+                <div class="mt-2">
+                  <li>
+                    <a href="#" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="#" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="#" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="#" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+                <div class="mt-2">
+                  <li>
+                    <a href="#" class=""> 3W CLINIC </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> 3DAMO </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+
+                  <li>
+                    <a href="#" class=""> Aromandina </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> AROMATICA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CERAVE </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COMMONLABS </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> COS DE BAHA </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DEAR KLAIR'S </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> DERMA HOUSE DR. </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> FARMSTAY </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> CEURACL </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li><a href="#" class="join_seller">Join As Seller</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- desktop drop down menu -->
+
+      <!-- responsive drop down menu -->
+
+      <div
+        class="responsive_drop_down_menu d-block d-lg-none position-relative"
+      >
+        <div id="responsive_drop_down_Box" class="side_nav shadow-sm">
+          <div class="p-4">
+            <!-- 1` -->
+            <div class="side_links border-bottom border-dark border-1">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Skin care</h5>
+                <i class="bi bi-caret-down-fill side_drop_down_open"></i>
+              </div>
+
+              <div id="product_types" class="hidden">
+                <div class="border-bottom border-dark border-1 mb-2">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="header">Product Types</h5>
+                    <i
+                      class="bi bi-caret-down-fill side_drop_down_open_two"
+                    ></i>
+                  </div>
+                  <div
+                    id="side_megamenu_list"
+                    class="hidden_two side_megamenu_list_links container"
+                  >
+                    <div class="">
+                      <li>
+                        <a href="#" class=""> Moisturizer </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Serum </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+
+                      <li>
+                        <a href="#" class=""> Cleanser </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Toner </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Essence </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Sunscreen </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Mask </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Soothing Gel </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Trial Kit </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Hair Care </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> cream </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+                <!-- skin types -->
+                <div id="skin_types" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Skin Types</h5>
+                      <i
+                        class="bi bi-caret-down-fill side_drop_down_open_three"
+                      ></i>
+                    </div>
+                    <div
+                      id="side_megamenu_list_skin"
+                      class="hidden_three side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Normal </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Oily </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Dry </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Combination </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Sensitive </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Damage </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> All Skin Types </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Skin Concern -->
+
+                <div id="concern_types" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Skin Concern</h5>
+                      <i
+                        class="bi bi-caret-down-fill side_drop_down_open_four"
+                      ></i>
+                    </div>
+                    <div
+                      id="side_megamenu_list_concern"
+                      class="hidden_four side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Normal </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Oily </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Dry </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Combination </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Sensitive </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Damage </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> All Skin Types </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Ingredients -->
+                <div id="Ingredients_types" class="">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="header">Ingredients</h5>
+                    <i
+                      class="bi bi-caret-down-fill side_drop_down_open_five"
+                    ></i>
+                  </div>
+                  <div
+                    id="side_megamenu_list_Ingredients"
+                    class="hidden_five side_megamenu_list_links container"
+                  >
+                    <div class="">
+                      <li>
+                        <a href="#" class=""> Normal </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Oily </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Dry </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Combination </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Sensitive </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Damage </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> All Skin Types </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="side_links border-bottom border-dark border-1 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Make Up</h5>
+                <i
+                  class="bi bi-caret-down-fill side_drop_down_open_make_up"
+                ></i>
+              </div>
+
+              <div id="make_up" class="hidden_make_up">
+                <!-- eyes make_up -->
+                <div id="eyes_make_up" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Eyes Makeup</h5>
+                      <i
+                        class="bi bi-caret-down-fill side_eyes_makeup_open_one"
+                      ></i>
+                    </div>
+                    <div
+                      id="side_eyes_makeup_one"
+                      class="eyes_hidden side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Eyeliner </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Pencil </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Eyes Concealer </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Eyeshadow </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Eyelash </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Mascara </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Lips Care -->
+
+                <div id="Lips_care" class="">
+                  <div class="border-bottom border-dark border-1 mb-2">
+                    <div class="d-flex justify-content-between">
+                      <h5 class="header">Lips Care</h5>
+                      <i class="bi bi-caret-down-fill lips_care_open"></i>
+                    </div>
+                    <div
+                      id="side_lips_care"
+                      class="lips_hidden side_megamenu_list_links container"
+                    >
+                      <div class="">
+                        <li>
+                          <a href="#" class=""> Lipstick </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Liquid Lipstick </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Lip Balm </a>
+                          <hr class="mt-1 mb-1" />
+                        </li>
+                        <li>
+                          <a href="#" class=""> Gloss </a>
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- nails care -->
+                <div id="Nails_Care" class="">
+                  <div class="d-flex justify-content-between">
+                    <h5 class="header">Nails Care</h5>
+                    <i class="bi bi-caret-down-fill Nails_Care_open"></i>
+                  </div>
+                  <div
+                    id="side_Nails_Care"
+                    class="nails_hidden side_megamenu_list_links container"
+                  >
+                    <div class="">
+                      <li>
+                        <a href="#" class=""> Nail Polish </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Nail Art </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> Polish Remover </a>
+                        <hr class="mt-1 mb-1" />
+                      </li>
+                      <li>
+                        <a href="#" class=""> False Nails </a>
+                      </li>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+
+            <div class="side_links border-bottom border-dark border-1 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Food</h5>
+                <i class="bi bi-caret-down-fill side_food_open"></i>
+              </div>
+
+              <div id="food" class="food_hidden">
+                <!-- skin types -->
+                <div class="food_links">
+                  <li>
+                    <a href="#" class=""> Normal </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Oily </a>
+                    <hr class="mt-1 mb-1" />
+                  </li>
+                  <li>
+                    <a href="#" class=""> Dry </a>
+                  </li>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4 -->
+
+            <li class="mt-3">
+              <a href="#" class="normal"> Eid Sale </a>
+              <hr class="mt-1 mb-1" />
+            </li>
+
+            <!-- 5 -->
+
+            <div class="side_links border-bottom border-dark border-1 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="header side_skin_care">Brand</h5>
+                <i class="bi bi-caret-down-fill side_Brand_open"></i>
+              </div>
+
+              <div id="Brand" class="brand_hidden">
+                <!-- skin types -->
+                <div class="food_links">
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                  </div>
+                  <div>
+                    <li>
+                      <a href="#" class=""> 3W CLINIC </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> 3DAMO </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+
+                    <li>
+                      <a href="#" class=""> Aromandina </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> AROMATICA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CERAVE </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COMMONLABS </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> COS DE BAHA </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DEAR KLAIR'S </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> DERMA HOUSE DR. </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> FARMSTAY </a>
+                      <hr class="mt-1 mb-1" />
+                    </li>
+                    <li>
+                      <a href="#" class=""> CEURACL </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- res nav bottom -->
+      <div class="d-lg-none position-relative">
+        <div class="res_nav shadow-lg">
+          <ul class="res_nav_links">
+            <li>
+              <a
+                href="/html/index.html"
+                class="d-flex align-items-center justify-content-center res_lists"
+              >
+                Home <span><i class="bi bi-house-door-fill"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center res_lists"
+                id="res_category"
+                >Category <span><i class="bi bi-ui-checks-grid"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center res_lists"
+              >
+                Cart <span><i class="bi bi-cart2"></i></span
+              ></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="d-flex align-items-center justify-content-center res_lists"
+                >Account <span><i class="bi bi-person-fill"></i></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- responsive drop down menu -->
+
+      <form class="d-block d-lg-none mt-2">
+        <div
+          class="position-relative d-flex justify-content-center align-items-center"
+        >
+          <input
+            class="search_input w-75 p-2"
+            type="text"
+            placeholder="Search makeup, skin care"
+          />
+          <i class="bi bi-search search_icons-btn"></i>
+        </div>
+      </form>
+      <div class="a_to_z_contaienr position-relative">
+        <div
+          class="a_to_z_border d-flex align-items-center justify-content-center"
+        >
+          <li>
+            <a href="#three" class="three">3</a>
+          </li>
+          <li>
+            <a href="#A" class="a">A</a>
+          </li>
+          <li>
+            <a href="#b" class="b">B</a>
+          </li>
+          <li>
+            <a href="#c" class="c">C</a>
+          </li>
+          <li>
+            <a href="#d" class="d">D</a>
+          </li>
+          <li>
+            <a href="#e" class="e">E</a>
+          </li>
+          <li>
+            <a href="#f" class="f">F</a>
+          </li>
+          <li>
+            <a href="#g" class="g">G</a>
+          </li>
+          <li>
+            <a href="#h" class="h">H</a>
+          </li>
+          <li>
+            <a href="#i" class="i">I</a>
+          </li>
+          <li>
+            <a href="#j" class="j">J</a>
+          </li>
+          <li>
+            <a href="#k" class="k">K</a>
+          </li>
+          <li>
+            <a href="#l" class="l">L</a>
+          </li>
+          <li>
+            <a href="#m" class="m">M</a>
+          </li>
+          <li>
+            <a href="#n" class="n">N</a>
+          </li>
+          <li>
+            <a href="#o" class="o">O</a>
+          </li>
+          <li>
+            <a href="#p" class="p">P</a>
+          </li>
+          <li>
+            <a href="#r" class="r">R</a>
+          </li>
+          <li>
+            <a href="#s" class="s">S</a>
+          </li>
+          <li>
+            <a href="#t" class="t">T</a>
+          </li>
+          <li>
+            <a href="#u" class="u">U</a>
+          </li>
+          <li>
+            <a href="#v" class="v">V</a>
+          </li>
+          <li>
+            <a href="#w" class="w">W</a>
+          </li>
+          <li>
+            <a href="#x" class="x">X</a>
+          </li>
+          <li>
+            <a href="#y" class="y">Y</a>
+          </li>
+          <li>
+            <a href="#z" class="z">Z</a>
+          </li>
+        </div>
+      </div>
+    </header>
+
+    <section class="container all_brands_section">
+      <div class="all_Brands">
+        <span class="all_Brands_header mt-4 mb-4">All Brands</span>
+        <div id="three" class="all_brands_three">3</div>
+        <a class="all_small_header" src="/html/category.html">3w Clinic</a>
+        <div id="A" class="all_brands_A mt-5">A</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Abib</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Absolute New York</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Active Nine</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Acwell</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Advanced Clinical</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Alpecin</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Amlactin</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Anafeli</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Anua</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <li>
+              <a class="all_big_header" href="/html/category.html">Aromatica</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Aronyx</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Art Naturals</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Asda</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Athena Beaute</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Aveeno</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Axis Y</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Aztec Secret</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Apieu</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Aquaphor</a>
+            </li>
+          </div>
+        </div>
+        <!-- b -->
+
+        <div id="b" class="all_brands_A mt-5">B</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Baby</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Banobagi</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Beauty Formulas</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Beauty Of Joseon</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Bio‑Oil</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Biolage</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Biowomen</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Body Fantasies</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Botanics</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <li>
+              <a class="all_big_header" href="/html/category.html">Banila Co</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Beaute</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Beauty Glazed</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Benton</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Bioderma</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Biore</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Blink </a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Boots</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Bristows</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Burts Bees</a
+              >
+            </li>
+          </div>
+        </div>
+        <!-- c -->
+
+        <div id="c" class="all_brands_A mt-5">C</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Care:Nel</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Cathy Doll</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Celimax</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Cerave</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Cetaphil</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Clean &amp; Clear</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Clear</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <li>
+              <a class="all_big_header" href="/html/category.html">Cloud 9</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Cnp Laboratory</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Colormax</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Combo</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Cos De Baha</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Cosrx</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Creme 21</a>
+            </li>
+          </div>
+        </div>
+        <!-- d -->
+        <div id="d" class="all_brands_A mt-5">D</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Dabo</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Dear Klairs</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Derma V10</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Derma:B</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Differin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <li>
+              <a class="all_big_header" href="/html/category.html">Dk</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Dove</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html"
+                >Dr Ceruracle</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Dr. G</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html/category.html">Dr. Jart</a>
+            </li>
+          </div>
+        </div>
+        <!-- d -->
+        <!-- e-->
+        <div id="e" class="all_brands_A mt-5">E</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html//category.html">E45</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html//category.html"
+                  >Earth Therapeutics</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html//category.html"
+                  >Ecotools</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html//category.html">Elf</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html//category.html"
+                  >Elizavecca</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html//category.html">Eltamd</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <li>
+              <a class="all_big_header" href="/html//category.html">Emaymei</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html//category.html"
+                >Enchanteur</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html//category.html">Essence</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html//category.html"
+                >Etude House</a
+              >
+            </li>
+            <li>
+              <a class="all_big_header" href="/html//category.html">Eucerin</a>
+            </li>
+            <li>
+              <a class="all_big_header" href="/html//category.html">Eunyul</a>
+            </li>
+          </div>
+        </div>
+        <!-- e -->
+
+        <div id="f" class="all_brands_A mt-5">F</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Fadeout Original</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Farmstay</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Freeman Beauty</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Freeman Beauty</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- G -->
+
+        <div id="g" class="all_brands_A mt-5">G</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Gamier</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Glow Recipe</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Goodal</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Groome</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Gillette</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Good Molecules</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Green Finger</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- H -->
+        <div id="h" class="all_brands_A mt-5">H</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Hada Labo</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Haruharu</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Herbal Essences</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Hafif</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Heirmish</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Himalaya</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">His</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- i -->
+        <div id="i" class="all_brands_A mt-5">I</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >I'M Form</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">LLiyoon</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Lsntree</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Idealove</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Innisfree</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Lunik</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- J -->
+        <div id="j" class="all_brands_A mt-5">J</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >J.Cat Beauty</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Jigott</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Jocelyn</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Jordanna</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Jergens</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Jnh</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Johnsons</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Jumiso</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- K -->
+        <div id="k" class="all_brands_A mt-5">K</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >K Brothers</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Kodomo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Kahi</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Krave Beauty</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- L -->
+        <div id="l" class="all_brands_A mt-5">L</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >L A Girl</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Lakme</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Le Beau</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Loreal</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >La Roche Posay</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Laneige</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Livon</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Lucy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- m -->
+        <div id="m" class="all_brands_A mt-5">M</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">M & S</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Maange</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mamaeart</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mary&May</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Medi-Peel</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Miktouch</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Missha</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">MIzon</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Muuchstac</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Ma:Nyo</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Make P.Rem</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html">Mamonde</a>
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mason Natural</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Maybeline New York</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mediflower</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html">Milani</a>
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mise En Sence</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Mixsoon</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mothercare</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- n -->
+        <div id="n" class="all_brands_A mt-5">N</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >NacificS</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Nars</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Nature SKin</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Mary&Neogen</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Nizoral</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Now Foods</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Njx</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Nair</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Nature Republic</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Nature's Bounty</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Neutrogena</a
+                >
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html">Nivea</a>
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Numbuzin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- o -->
+        <div id="o" class="all_brands_A mt-5">O</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Ogx</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Olay</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Olaplex</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- P -->
+        <div id="p" class="all_brands_A mt-5">P</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Palmers</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Panoxyll</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Peripera</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Ponds</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Power Knght</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Puritto</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Palmolive</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Pantene</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Paulas Choce</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Pigment Play</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Pixi</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Pororo</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Provoke</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- r -->
+        <div id="r" class="all_brands_A mt-5">R</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Revlon</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Ribana</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Rohto</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Round Lab</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Revloution</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Rimmel</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Rom&Nd</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Ryo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- s -->
+        <div id="s" class="all_brands_A mt-5">S</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Saranara</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Simple</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Skin Aqua</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Skincafe</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Some By Mi</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Streax</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Secret Key</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Simply</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Skin1004</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Star</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Surmedic</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- t -->
+        <div id="t" class="all_brands_A mt-5">T</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Technic</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Thayars</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >The FAce Shop</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >The Ordinary</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Thera Neem</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Tirtir</a>
+              </li>
+
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Tresemme</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Tha By Nongchat</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >The Body Shop</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >The lnkey List</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >The Same</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Tiam</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Tonymoly</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Torriden</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- u -->
+        <div id="u" class="all_brands_A mt-5">U</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Ushas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- v -->
+        <div id="v" class="all_brands_A mt-5">V</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">V Wash</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Vanicream</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Vatika</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Vichy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Valencia Gio</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Vaseline</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Veet</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Victorias Secret</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- w-->
+        <div id="w" class="all_brands_A mt-5">W</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >W.Skin Laboratory</a
+                >
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Watsons</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html">Wow</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">W7</a>
+              </li>
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Wet N Wild</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- X-->
+        <div id="x" class="all_brands_A mt-5">X</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Xpel</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- y-->
+        <div id="y" class="all_brands_A mt-5">Y</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Yardley</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html"
+                  >Your Vegan</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- z-->
+        <div id="z" class="all_brands_A mt-5">z</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Zafran</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xll-6">
+            <ul class="all_famous">
+              <li>
+                <a class="all_big_header" href="/html/category.html">Zenzia</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer class="mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <img
+              src="../img/logo.jpg"
+              class="img-fluid cursor_pointer"
+              alt="logo"
+            />
+            <p class="footer_text">
+              Shofy is a powerful tool eCommerce Laravel script for creating a
+              professional and visually appealing online store.
+            </p>
+            <div class="d-flex align-items-center gap-2 social_Icons">
+              <div>
+                <a class="facebook" href="https://www.facebook.com/">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="xtv">
+                <a href="https://www.google.com">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="youtube">
+                <a href="https://www.youtube.com">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z"
+                    ></path>
+                    <path d="M10 9l5 3l-5 3z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="linkedin">
+                <a href="https://www.linkedin.com">
+                  <svg
+                    class="icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <ul class="footer_account_lists position-relative">
+              <h3 class="footer_header mb-2">My Account</h3>
+              <li>
+                <a href="#"> Track Orders </a>
+              </li>
+              <li>
+                <a href="#"> Shipping </a>
+              </li>
+              <li>
+                <a href="#"> Wishlist </a>
+              </li>
+              <li>
+                <a href="#"> My Account </a>
+              </li>
+              <li>
+                <a href="#"> Order History </a>
+              </li>
+              <li>
+                <a href="#"> Returns </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <ul class="footer_account_lists position-relative">
+              <h3 class="footer_header mb-2">Information</h3>
+              <li>
+                <a href="#"> Our Story </a>
+              </li>
+              <li>
+                <a href="#"> Careers </a>
+              </li>
+              <li>
+                <a href="#"> Privacy Policy </a>
+              </li>
+              <li>
+                <a href="#"> Latest News </a>
+              </li>
+              <li>
+                <a href="#"> Contact us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 col-xl-3 col-xxl-3 mt-3">
+            <h3 class="footer_header mb-2">Talk To Us</h3>
+            <span>Got Questions? Call us </span>
+            <p>+670 413 90 762</p>
+            <div class="d-flex align-items-center gap-2">
+              <svg
+                width="18"
+                height="16"
+                viewBox="0 0 18 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 5C1 2.2 2.6 1 5 1H13C15.4 1 17 2.2 17 5V10.6C17 13.4 15.4 14.6 13 14.6H5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M13 5.40039L10.496 7.40039C9.672 8.05639 8.32 8.05639 7.496 7.40039L5 5.40039"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M1 11.4004H5.8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M1 8.19922H3.4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+              <span class="cursor_pointer footer_information"
+                >support@shofy.com</span
+              >
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <svg
+                width="17"
+                height="20"
+                viewBox="0 0 17 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.50001 10.9417C9.99877 10.9417 11.2138 9.72668 11.2138 8.22791C11.2138 6.72915 9.99877 5.51416 8.50001 5.51416C7.00124 5.51416 5.78625 6.72915 5.78625 8.22791C5.78625 9.72668 7.00124 10.9417 8.50001 10.9417Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                ></path>
+                <path
+                  d="M1.21115 6.64496C2.92464 -0.887449 14.0841 -0.878751 15.7889 6.65366C16.7891 11.0722 14.0406 14.8123 11.6313 17.126C9.88298 18.8134 7.11704 18.8134 5.36006 17.126C2.95943 14.8123 0.210885 11.0635 1.21115 6.64496Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                ></path>
+              </svg>
+              <span class="cursor_pointer footer_information"
+                >79 Sleepy Hollow St. Jamaica, New York 1432</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer_collection mt-4">
+          <div class="healthAndBeauty mt-3">
+            <strong>Health & Beauty:</strong>
+            <a href="#">Dresses</a>
+            <a href="#">Hats</a>
+            <a href="#">Jeans</a>
+            <a href="#">Women's Clothing</a>
+            <a href="#">Suits</a>
+            <a href="#">Pants</a>
+            <a href="#">Accessories</a>
+          </div>
+          <div class="healthAndBeauty mt-3">
+            <strong>Electronics:</strong>
+            <a href="#">Men's Clothing</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Activewear</a>
+            <a href="#">Shoes</a>
+          </div>
+          <div class="healthAndBeauty mt-3">
+            <strong>Sweet Treats:</strong>
+            <a href="#">Hats</a>
+            <a href="#">Running Shoes</a>
+            <a href="#">Scarves</a>
+            <a href="#">Accessories</a>
+            <a href="#">jewelry</a>
+            <a href="#">Shoes</a>
+            <a href="#">Sportswear</a>
+          </div>
+          <div class="healthAndBeauty mt-3">
+            <strong>Fashion:</strong>
+            <a href="#">Discover Skincard</a>
+            <a href="#">Men's Clothing</a>
+            <a href="#">T-Shirts</a>
+            <a href="#">Dresses</a>
+            <a href="#">Clothing</a>
+            <a href="#">jeans</a>
+            <a href="#">Women's Clothing</a>
+            <a href="#">Suits</a>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </footer>
+    <div class="sub_footer">
+      <div>
+        <p>thecosmeticsworldbd.com @ all right reserved</p>
+      </div>
+      <div>
+        <p>Developed By MIT</p>
+      </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap -->
+    <script src="../js/category.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/brand.js"></script>
+  </body>
+</html>

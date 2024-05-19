@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  text-decoration: none !important;
+  list-style: none;
+}
+
+section {
+  margin-top: 130px;
+}
+
+.name,
+.select_op {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(185 28 28);
+  margin-bottom: -15px;
+}
+
+.select_op {
+  margin-bottom: 3px !important;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("/img/arrow-down.svg");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+  -webkit-print-color-adjust: exact;
+  background-color: transparent;
+  border: none;
+  padding: var(--field-padding);
+  border-radius: 3px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  border: 2px solid #ddd;
+  transition: border 0.2s ease;
+  border-radius: 5px;
+}
+
+.place_your_order {
+  width: 50%;
+  padding: 12px;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 6px;
+  margin-top: 24px;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply_btn {
+  font-size: 14px;
+  height: fit-content;
+  border-radius: 5px;
+  background-color: var(--primary);
+  width: 85px;
+  color: var(--white);
+  border: none;
+  height: auto;
+  font-weight: 600;
+}
+
+.all_total_price {
+  font-size: 20px;
+  font-weight: 600;
+}
+.all_total_price_s {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subtoal_main {
+  font-size: 15px;
+  font-weight: 300;
+  color: #8b8b8b;
+}
+
+.custom_sub {
+  margin-top: -33px;
+}
